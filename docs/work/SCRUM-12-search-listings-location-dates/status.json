@@ -1,0 +1,14 @@
+{
+  "issue": "SCRUM-12",
+  "slug": "search-listings-location-dates",
+  "stage": "test",
+  "approved": {
+    "intent": true,
+    "plan": true
+  },
+  "figma_url": "https://www.figma.com/design/RBxZe4x7JdYN0Llt5RZIbc",
+  "branch": "SCRUM-12-search-listings-location-dates",
+  "pr_url": null,
+  "preview_url": null,
+  "updated": "2026-11-11T13:06:36.608690+00:00"
+}
