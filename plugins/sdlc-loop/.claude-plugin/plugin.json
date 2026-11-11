@@ -1,0 +1,6 @@
+{
+  "name": "sdlc-loop",
+  "version": "0.1.0",
+  "description": "One specialized agent per AI-native SDLC stage (plan, design, build, test, deploy, maintain), each driven by skills and wired to the Atlassian, Figma, Vercel and Supabase MCPs.",
+  "author": { "name": "Marcdaou" }
+}
