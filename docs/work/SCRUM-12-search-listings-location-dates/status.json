@@ -1,7 +1,7 @@
 {
   "issue": "SCRUM-12",
   "slug": "search-listings-location-dates",
-  "stage": "maintain",
+  "stage": "done",
   "approved": {
     "intent": true,
     "plan": true
@@ -10,5 +10,5 @@
   "branch": "SCRUM-12-search-listings-location-dates",
   "pr_url": "https://github.com/Marcdaou/bnb/pull/1",
   "preview_url": "https://staybnb-ngugwiow2-marc-daous-projects.vercel.app",
-  "updated": "2026-11-11T13:13:43Z"
+  "updated": "2026-11-11T13:19:56Z"
 }

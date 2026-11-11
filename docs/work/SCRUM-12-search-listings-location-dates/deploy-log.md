@@ -22,3 +22,13 @@ Migration 0002 (available_listings RPC) is NOT applied. The preview runs against
 
 ## Production
 NOT promoted (human gate).
+
+## Maintain check
+Healthy 2026-11-11 (window: last 24h, covers deployment dpl_BC7eLedym1MRPQtkFddQ9NnAsbFn)
+- Vercel get_runtime_errors (24h): none. Static SPA, no functions, so runtime logs carry little signal.
+- Supabase staybnb (auxkvbijleeakvfjtlxh) logs: no 4xx/5xx on rest/rpc; only a single unauthenticated `GET /` 401 (noise) and schema-cache reloads. `get_unavailable_ranges` RPC calls return 200. No preview search traffic seen yet, so the PGRST202 fallback path is unexercised in real use.
+- Advisors (pre-existing, not caused by SCRUM-12):
+  - security WARN 0028/0029: `get_unavailable_ranges` is SECURITY DEFINER and executable by anon/authenticated. Intentional per 0001_schema.sql and intent.md (exposes only date ranges). No action.
+  - security WARN: leaked password protection disabled (Auth setting). Hardening, not an incident.
+  - performance INFO: unused indexes `listings_host_id_idx`, `wishlists_listing_id_idx` (DB is new; expected).
+- Context, not an incident: migration 0002 (`unavailable_listing_ids`) is still NOT applied; search relies on the app's PGRST202 fallback until a human applies it.
