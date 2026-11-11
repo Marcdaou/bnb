@@ -1,0 +1,7 @@
+{
+  "name": "bnb-local",
+  "owner": { "name": "Marcdaou" },
+  "plugins": [
+    { "name": "sdlc-loop", "source": "./plugins/sdlc-loop", "description": "AI-native SDLC loop: Jira -> intent -> Figma + spec -> plan -> build -> test -> Vercel preview -> maintain" }
+  ]
+}
